@@ -22,7 +22,7 @@ const RecentProjects = () => {
             {/* pin container starts from here */}
             <PinContainer
               title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              href="https://www.linkedin.com/in/nazim-uddin-23a93a216/"
             >
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]  mb-10">
                 <div
