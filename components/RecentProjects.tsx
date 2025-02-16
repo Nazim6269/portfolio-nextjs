@@ -1,15 +1,16 @@
-'use client';
+"use client";
 
-import { projects } from '@/data';
-import Image from 'next/image';
-import { FaLocationArrow } from 'react-icons/fa6';
-import { PinContainer } from './ui/3d-Pin';
+import { projects } from "@/data";
+import Image from "next/image";
+import Link from "next/link";
+import { FaLocationArrow } from "react-icons/fa6";
+import { PinContainer } from "./ui/3d-Pin";
 
 const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className="heading">
-        A small selection of{' '}
+        A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
@@ -26,12 +27,12 @@ const RecentProjects = () => {
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]  mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: '#13162D' }}
+                  style={{ backgroundColor: "#13162D" }}
                 >
                   <Image width={200} height={160} src="/bg.png" alt="bgimg" />
                 </div>
                 <Image
-                  width={429}
+                  width={629}
                   height={270}
                   src={item.img}
                   alt="cover"
@@ -46,8 +47,8 @@ const RecentProjects = () => {
               <p
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
                 style={{
-                  color: '#BEC1DD',
-                  margin: '1vh 0',
+                  color: "#BEC1DD",
+                  margin: "1vh 0",
                 }}
               >
                 {item.des}
@@ -76,7 +77,7 @@ const RecentProjects = () => {
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    <Link href={item.link}>Check Live Site</Link>
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
